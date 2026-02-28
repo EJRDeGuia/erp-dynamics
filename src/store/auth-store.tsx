@@ -26,6 +26,7 @@ const demoCredentials: Record<UserRole, { email: string; password: string; name:
   distribution: { email: 'distribution@erp.com', password: 'dist123', name: 'Distribution Manager' },
   hr: { email: 'hr@erp.com', password: 'hr123', name: 'HR Director' },
   manufacturing: { email: 'manufacturing@erp.com', password: 'mfg123', name: 'Manufacturing Lead' },
+  accounts: { email: 'accounts@erp.com', password: 'acc123', name: 'Finance Manager' },
 };
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {

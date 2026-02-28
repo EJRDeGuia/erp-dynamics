@@ -17,6 +17,7 @@ import HRPage from "@/pages/modules/HRPage";
 import ProjectPage from "@/pages/modules/ProjectPage";
 import ServicePage from "@/pages/modules/ServicePage";
 import ManufacturingPage from "@/pages/modules/ManufacturingPage";
+import AccountsPage from "@/pages/modules/AccountsPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -42,6 +43,7 @@ const App = () => (
                 <Route path="/project" element={<ProtectedRoute allowedRoles={['project']}><ProjectPage /></ProtectedRoute>} />
                 <Route path="/service" element={<ProtectedRoute allowedRoles={['service']}><ServicePage /></ProtectedRoute>} />
                 <Route path="/manufacturing" element={<ProtectedRoute allowedRoles={['manufacturing']}><ManufacturingPage /></ProtectedRoute>} />
+                <Route path="/accounts" element={<ProtectedRoute allowedRoles={['accounts']}><AccountsPage /></ProtectedRoute>} />
               </Route>
               <Route path="*" element={<NotFound />} />
             </Routes>
