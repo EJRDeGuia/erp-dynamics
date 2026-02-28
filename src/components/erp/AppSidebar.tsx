@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import {
   LayoutDashboard, Users, ShoppingCart, ShoppingBag, FolderKanban,
-  Headphones, Warehouse, UserCog, Factory, LogOut, Building2,
+  Headphones, Warehouse, UserCog, Factory, LogOut, Building2, Calculator,
 } from 'lucide-react';
 
 interface ModuleNav {
@@ -30,6 +30,7 @@ const modules: ModuleNav[] = [
   { title: 'Distribution', url: '/distribution', icon: Warehouse, roles: ['admin', 'distribution'] },
   { title: 'HR', url: '/hr', icon: UserCog, roles: ['admin', 'hr'] },
   { title: 'Manufacturing', url: '/manufacturing', icon: Factory, roles: ['admin', 'manufacturing'] },
+  { title: 'Accounts', url: '/accounts', icon: Calculator, roles: ['admin', 'accounts'] },
 ];
 
 export function AppSidebar() {

@@ -19,6 +19,7 @@ const roles: { value: UserRole; label: string }[] = [
   { value: 'distribution', label: 'Distribution' },
   { value: 'hr', label: 'Human Resources' },
   { value: 'manufacturing', label: 'Manufacturing' },
+  { value: 'accounts', label: 'Accounts & Finance' },
 ];
 
 const credentialsHint: Record<UserRole, string> = {
@@ -31,6 +32,7 @@ const credentialsHint: Record<UserRole, string> = {
   distribution: 'distribution@erp.com / dist123',
   hr: 'hr@erp.com / hr123',
   manufacturing: 'manufacturing@erp.com / mfg123',
+  accounts: 'accounts@erp.com / acc123',
 };
 
 export default function Login() {
